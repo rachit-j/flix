@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}{{ site.favicon }}">
+
+{%- include head.html -%}
+
+<header>
+  {%- include header.html -%}
+</header>
+
+<body>
+  <br>
+
+  
+  <div class="wrapper">
+
+
+    <section>
+      {{ content }}
+    </section>
+
+  </div>
+</body>
+
+{% include footer.html %}
+
+</html>

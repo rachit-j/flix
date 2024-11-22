@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+  {%- include head.html -%}
+  <body>
+    <style>
+      body {
+        background: url('https://gifdb.com/images/high/falling-stars-g12ux36ccv3n6r8b.gif') no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        font-family: 'Anton', sans-serif;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <main class="page-content" aria-label="Content">
+        {{ content }}
+    </main>
+  </body>
+</html>

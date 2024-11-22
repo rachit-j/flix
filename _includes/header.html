@@ -1,0 +1,173 @@
+<header>
+  <style>
+     .nav {
+       background-color: #222222; 
+       list-style-type: none;
+       text-align: center;
+       margin: 0;
+       padding: 20;
+     }
+     
+     .nav li {
+       display: inline-flex;
+       font-size: 20px;
+       padding: 20px;
+     }
+     
+     .nav li a {
+       color: #F5F5F5;
+       text-decoration: none;
+     }
+     
+     .nav li a:hover {
+       color: #CCCCCC;
+     }
+     
+     .button {
+       border: none;
+       color: #F5F5F5;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       cursor: pointer;
+       padding: 10px 20px;
+       background-color: #222222;
+       border-radius: 4px;
+       transition: background-color 0.3s;
+     }
+     
+     .button:hover {
+       background-color: #333333;
+     }
+
+     .nav .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .nav .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .nav .dropdown-content a {
+      color: black;
+      padding: 4px 8px;
+      text-decoration: none;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .nav .dropdown-content a:hover {
+      background-color: #e1e1e1; /* Lighter grey to reduce the dimming effect */
+      color: #2c3e50; /* Ensure text color remains black */
+    }
+
+    .nav .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .nav .dropdown-content a + a {
+      margin-top: 0px;
+    }
+
+    /* This sets the initial state of the arrow, rotated 90 degrees clockwise */
+    .nav .dropdown > a .arrow {
+      display: inline-block;
+      transform: rotate(-90deg); /* Start with the arrow rotated 90 degrees */
+      transition: transform 0.3s ease; /* Smooth transition for rotation */
+    }
+
+    /* This will reset the arrow to its original position on hover */
+    .nav .dropdown:hover > a .arrow {
+      transform: rotate(0deg); /* Rotate back to the original position */
+    }
+
+    .nav .logo img {
+      vertical-align: middle;       /* Aligns the image vertically within the line */
+      height: 50px;                 /* Fixed height */
+      width: auto;                  /* Width is automatically adjusted to maintain aspect ratio */
+      max-width: 160px;             /* Maximum width to ensure it does not get too large */
+      max-height: 100%;             /* Ensures the height does not exceed the line height of the navbar */
+    }
+
+    .nav .profile-content {
+      text-align: center;
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .nav .profile-content img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .nav .profile-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      padding: 5px 0;
+    }
+
+    .nav .profile-content a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .nav .profile-content a:hover {
+      text-decoration: underline;
+    }
+
+
+
+
+  </style>
+ 
+  <div id="header">
+     <nav>
+       <ul class="nav">
+        
+        <li class="logo"><a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/logo/rift_sidebar.png" alt="Logo"></a></li>
+
+
+         <li class="fork"><a href="{{site.baseurl}}/blogs">Blogs</a></li>
+         <li class="fork"><a href="{{site.baseurl}}/2024/01/30/deployment_IPYNB_2_.html">How 2 Deploy</a></li>
+         <li class="fork"><a href="https://docs.google.com/spreadsheets/d/1NTml1QBB8whxcBIoVY6Ukswi9113ylSlezI_MFyE1jI/edit?usp=sharing">Ports</a></li>
+         <!-- dropdown w/ 3 elements for links -->
+         <li class="dropdown">
+          <a href="#">Cockpit <span class="arrow">&#9660;</span></a>
+          <ul class="dropdown-content">
+            <li><a href="https://csap1.stu.nighthawkcodingsociety.com/">CSA Period 1</a></li>
+            <li><a href="https://csap3.stu.nighthawkcodingsociety.com/">CSA Period 3</a></li>
+            <li><a href="https://cockpitp1.nighthawkcodingsociety.com/">CSP Period 1</a></li>
+            <li><a href="https://cockpitp2.nighthawkcodingsociety.com/">CSP Period 2</a></li>
+            <li><a href="https://cockpitp4.nighthawkcodingsociety.com/">CSP Period 4</a></li>
+            <li><a href="https://cockpitp5.nighthawkcodingsociety.com/">CSP Period 5</a></li>
+            <li><a href="https://riftcockpit.stu.nighthawkcodingsociety.com/">Riftdev</a></li>
+          </ul>
+        </li>
+         <li class="title"><a href="{{site.baseurl}}/2024/03/20/CSP-Deployment-Quiz.html">Quiz README</a></li>
+         <li class="title"><a href="{{ site.github.repository_url }}#readme">View On GitHub</a></li>
+         <!-- <li class="dropdown">
+          <a href="#">About Me <span class="arrow">&#9660;</span></a>
+          <div class="dropdown-content profile-content">
+            <img src="{{site.baseurl}}/assets/images/profile.png" alt="Profile Picture">
+            <p>Rachit Jaiswal</p>
+            <p>RIFT Creator and Developer</p>
+            <a href="https://www.linkedin.com/in/rachit-jaiswal-a534b5196/" target="_blank">LinkedIn</a>
+            <a href="mailto:rjaiswal.sd.77@gmail.com">Email Me</a>
+          </div>
+        </li>         -->
+       </ul>
+     </nav>
+  </div><!-- end header -->
+ </header>
