@@ -101,7 +101,7 @@ bundle install
 
     - Save on ipynb or md activiates "regeneration". Refresh browser to see updates. Example terminal message...
     ```
-    Regenerating: 1 file(s) changed at 2023-07-31 06:54:32
+    Regenerating: 1 file(s) changed at 2024-07-31 06:54:32
         _notebooks/2024-01-04-cockpit-setup.ipynb
     ```
 

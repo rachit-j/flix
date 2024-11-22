@@ -1,6 +1,6 @@
 document.getElementById('loadData').addEventListener('click', function() {
     $.ajax({
-        url: 'https://riftflask.stu.nighthawkcodingsociety.com//get-ec2-instances',
+        url: 'https://flixflask.stu.nighthawkcodingsociety.com//get-ec2-instances',
         type: 'GET',
         success: function(response) {
             displayInstances(response);

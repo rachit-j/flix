@@ -1,0 +1,26 @@
+{
+    "Week 1": {
+      "Monday_11-17-24": [
+        "lecnotes.pdf",
+        "lecture_outline.mp4"
+      ],
+      "Wednesday_11-19-24": [
+        "discussion_notes.pdf",
+        "slides.pdf"
+      ],
+      "Friday_11-21-24": [
+        "final_review.mp4",
+        "key_points.pdf"
+      ]
+    },
+    "week_2": {
+      "Tuesday_12-02-24": [
+        "class_notes.pdf",
+        "summary.mp4"
+      ],
+      "Thursday_12-04-24": [
+        "lecture_video.mp4",
+        "additional_material.pdf"
+      ]
+    }
+  }
