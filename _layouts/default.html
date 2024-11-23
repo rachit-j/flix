@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
+<head>
   <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}{{ site.favicon }}">
+  {%- include head.html -%}
+  <style>
+    /* Ensure full height of viewport for the page */
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
 
-{%- include head.html -%}
-
-<header>
-  {%- include header.html -%}
-</header>
+    /* Main content wrapper takes up all available space */
+    .content-wrapper {
+        flex: 1; /* Fills remaining space between header and footer */
+        display: flex;
+        flex-direction: column;
+    }
+  </style>
+</head>
 
 <body>
-  <br>
+  <!-- Header -->
+  <header>
+    {%- include header.html -%}
+  </header>
 
-  
-  
-
-
+  <!-- Main Content -->
+  <div class="content-wrapper">
     <section>
       {{ content }}
     </section>
+  </div>
 
-  
+  <!-- Footer -->
+  {% include footer.html %}
 </body>
-
-{% include footer.html %}
-
 </html>
