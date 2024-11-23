@@ -3,6 +3,8 @@ layout: default
 title: CSSE 1 Lecture Notes
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
 <div style="display: flex; font-family: Arial, sans-serif; padding: 20px;">
 
     <!-- Sidebar for Week Selection -->
@@ -106,6 +108,24 @@ title: CSSE 1 Lecture Notes
                 videoPlayer.style.width = '100%';
                 videoPlayer.style.borderRadius = '8px';
                 notesContent.appendChild(videoPlayer);
+            } else if (file.endsWith('.md')) {
+                // Fetch and render Markdown file
+                fetch(filePath)
+                    .then(response => response.text())
+                    .then(markdownContent => {
+                        const markdownHTML = marked.parse(markdownContent); // Convert markdown to HTML
+                        const markdownContainer = document.createElement('div');
+                        markdownContainer.innerHTML = markdownHTML;
+                        markdownContainer.style.padding = '10px';
+                        markdownContainer.style.backgroundColor = '#f9f9f9';
+                        markdownContainer.style.border = '1px solid #ddd';
+                        notesContent.appendChild(markdownContainer);
+                    })
+                    .catch(error => {
+                        const errorMessage = document.createElement('p');
+                        errorMessage.textContent = `Error loading markdown file: ${error}`;
+                        notesContent.appendChild(errorMessage);
+                    });
             } else {
                 // Unsupported file type
                 const unsupportedMessage = document.createElement('p');
