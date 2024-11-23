@@ -22,11 +22,11 @@ title: CSSE 1 Calendars
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid #ccc; padding: 10px;">Lecture 1</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Practice Problems</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Lecture 2</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Discussion</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Quiz 1</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">Introduction</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">Lecture 1: Tools</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">Workday: Tools</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">Workday: Tools + Personal Blog</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">Lecture: Personal Blog</td>
             </tr>
         </tbody>
     </table>
@@ -48,11 +48,11 @@ title: CSSE 1 Calendars
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid #ccc; padding: 10px;">Lecture 3</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Coding Practice</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Lecture 4</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Discussion</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Quiz 2</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
             </tr>
         </tbody>
     </table>
@@ -71,11 +71,11 @@ title: CSSE 1 Calendars
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid #ccc; padding: 10px;">Lecture 5</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Assignment Review</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Lecture 6</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Discussion</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Quiz 3</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
             </tr>
         </tbody>
     </table>
@@ -97,11 +97,11 @@ title: CSSE 1 Calendars
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid #ccc; padding: 10px;">Lecture 7</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Practice Problems</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Lecture 8</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Discussion</td>
-                <td style="border: 1px solid #ccc; padding: 10px;">Quiz 4</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">N/A</td>
             </tr>
         </tbody>
     </table>
