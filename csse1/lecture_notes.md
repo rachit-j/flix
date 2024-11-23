@@ -19,7 +19,7 @@ title: CSSE 1 Lecture Notes
     <div style="flex: 3; padding-left: 20px;">
         <h2>Lecture Notes</h2>
         <div id="notes-content" style="border: 1px solid #ddd; border-radius: 8px; padding: 15px; background-color: #f9f9f9;">
-            <p>Select a week and day to view the notes.</p>
+            <p>Select a week and day to view the notes. Click on files to view them in the page.</p>
         </div>
     </div>
 </div>
