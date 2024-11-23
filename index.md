@@ -41,7 +41,7 @@ title: Flix
         <div style="flex: 3; padding: 15px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px;">
             <h3>Upcoming Events</h3>
             <ul style="list-style: none; padding: 0;">
-                <li><strong>Live Review:</strong> Dec 4, 2024</li>
+                <li><strong>Live Review:</strong> Dec 4, 2024. Have your personal blog ready</li>
                 <!-- <li><strong>Hackathon Kickoff:</strong> Dec 5, 2024</li>
                 <li><strong>Final Exam Review:</strong> Dec 10, 2024</li> -->
             </ul>
