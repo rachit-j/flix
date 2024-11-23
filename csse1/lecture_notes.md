@@ -90,7 +90,20 @@ title: CSSE 1 Lecture Notes
             fileNameHeading.textContent = `File: ${file}`;
             fileNameHeading.style.marginTop = '20px';
             fileNameHeading.style.textDecoration = 'underline'; // Underline the file name heading
+            fileNameHeading.style.cursor = 'pointer'; // Pointer to indicate toggle
             notesContent.appendChild(fileNameHeading);
+
+            // Create a container for file content (hidden by default)
+            const fileContentContainer = document.createElement('div');
+            fileContentContainer.style.display = 'none'; // Hidden initially
+            fileContentContainer.style.marginTop = '10px';
+            notesContent.appendChild(fileContentContainer);
+
+            // Add click event to toggle visibility
+            fileNameHeading.addEventListener('click', () => {
+                fileContentContainer.style.display =
+                    fileContentContainer.style.display === 'none' ? 'block' : 'none';
+            });
 
             if (file.endsWith('.pdf')) {
                 // Render PDF in iframe
@@ -99,7 +112,7 @@ title: CSSE 1 Lecture Notes
                 pdfViewer.style.width = '100%';
                 pdfViewer.style.height = '500px';
                 pdfViewer.style.border = 'none';
-                notesContent.appendChild(pdfViewer);
+                fileContentContainer.appendChild(pdfViewer);
             } else if (file.endsWith('.mp4')) {
                 // Render video player
                 const videoPlayer = document.createElement('video');
@@ -107,7 +120,7 @@ title: CSSE 1 Lecture Notes
                 videoPlayer.controls = true;
                 videoPlayer.style.width = '100%';
                 videoPlayer.style.borderRadius = '8px';
-                notesContent.appendChild(videoPlayer);
+                fileContentContainer.appendChild(videoPlayer);
             } else if (file.endsWith('.md')) {
                 // Fetch and render Markdown file
                 fetch(filePath)
@@ -119,18 +132,18 @@ title: CSSE 1 Lecture Notes
                         markdownContainer.style.padding = '10px';
                         markdownContainer.style.backgroundColor = '#f9f9f9';
                         markdownContainer.style.border = '1px solid #ddd';
-                        notesContent.appendChild(markdownContainer);
+                        fileContentContainer.appendChild(markdownContainer);
                     })
                     .catch(error => {
                         const errorMessage = document.createElement('p');
                         errorMessage.textContent = `Error loading markdown file: ${error}`;
-                        notesContent.appendChild(errorMessage);
+                        fileContentContainer.appendChild(errorMessage);
                     });
             } else {
                 // Unsupported file type
                 const unsupportedMessage = document.createElement('p');
                 unsupportedMessage.textContent = `Unsupported file type: ${file}. Please download to view.`;
-                notesContent.appendChild(unsupportedMessage);
+                fileContentContainer.appendChild(unsupportedMessage);
             }
         });
     }
